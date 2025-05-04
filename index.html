@@ -1,13 +1,265 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Sáng Nguyễn - Flutter Developer & Software Consultant</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="styles.css">
 </head>
 
 <body>
-    <h1>Hi</h1>
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">SANG NGUYEN</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+            </div>
+            <a href="#contact"
+                class="btn-contact">Contact →</a>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container header-content">
+            <div class="hero-text">
+                <h1 class="hero-title">I'M A FLUTTER DEVELOPER<br>AND SOFTWARE CONSULTANT</h1>
+                <div class="hero-subtitle">Building visually stunning & user-friendly cross-platform apps</div>
+                <div class="hero-desc">As a dedicated Flutter developer and consultant, I specialize in creating
+                    seamless digital experiences for web & mobile. My passion lies in crafting beautiful, functional,
+                    and scalable applications.</div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sangnguyenngoc/"
+                        target="_blank"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/samderlust"
+                        target="_blank"
+                        aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:sangdev09@gmail.com"
+                        aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="stats-row">
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/profile_photo.jpg"
+                alt="Sáng Nguyễn"
+                class="profile-image">
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a passionate Flutter developer and software consultant with years of experience in building
+                        cross-platform applications. My expertise lies in creating efficient, scalable, and maintainable
+                        solutions that deliver exceptional user experiences.</p>
+                    <p>As the founder of Samderlust Consulting, I lead a team of skilled developers dedicated to
+                        implementing best practices and staying at the forefront of technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Flutter Development</h3>
+                    <p>Expert in building cross-platform applications using Flutter framework, ensuring consistent
+                        performance across iOS and Android.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Software Design</h3>
+                    <p>Specialized in planning and designing applications with scalability and maintainability in mind.
+                    </p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Best Practices</h3>
+                    <p>Implementation of industry best practices to ensure optimal performance and code quality.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Technical Leadership</h3>
+                    <p>Leading development teams and mentoring junior developers to achieve project success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Published Apps</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Image removed -->
+                    </div>
+                    <div class="project-info">
+                        <h3>Korean Easy App</h3>
+                        <p>Learn Korean easily with curated lessons and quizzes.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Education</span>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="https://play.google.com/store/apps/details?id=com.samderlust.korean_easy"
+                            class="project-link"
+                            target="_blank">Play Store</a>
+                        <a href="https://apps.apple.com/us/app/korean-easy/id6739499694"
+                            class="project-link"
+                            target="_blank">App Store</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Image removed -->
+                    </div>
+                    <div class="project-info">
+                        <h3>Mortgage Hub App</h3>
+                        <p>All-in-one mortgage calculator and management tool.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Finance</span>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="https://play.google.com/store/apps/details?id=com.samderlust.mortgage_hub"
+                            class="project-link"
+                            target="_blank">Play Store</a>
+                        <a href="https://apps.apple.com/us/app/mortgage-hub/id6450971771"
+                            class="project-link"
+                            target="_blank">App Store</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Image removed -->
+                    </div>
+                    <div class="project-info">
+                        <h3>Membership Wallet App</h3>
+                        <p>Store and manage all your memberships in one secure app.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Productivity</span>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="https://play.google.com/store/apps/details?id=com.samderlust.the_wallet"
+                            class="project-link"
+                            target="_blank">Play Store</a>
+                        <a href="https://apps.apple.com/us/app/membership-wallet/id6445927416"
+                            class="project-link"
+                            target="_blank">App Store</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="opensource">
+        <div class="container">
+            <h2 class="section-title">Public Open Source Contributions</h2>
+            <div class="oss-grid">
+                <div class="oss-card">
+                    <h3><a href="https://pub.dev/packages/calendar_day_view"
+                            target="_blank">calendar_day_view</a></h3>
+                    <p>Highly customizable day view calendar widget for Flutter.</p>
+                    <a href="https://pub.dev/packages/calendar_day_view"
+                        class="oss-link"
+                        target="_blank">View on pub.dev</a>
+                </div>
+                <div class="oss-card">
+                    <h3><a href="https://pub.dev/packages/async_queue"
+                            target="_blank">async_queue</a></h3>
+                    <p>Simple async task queue for Dart and Flutter.</p>
+                    <a href="https://pub.dev/packages/async_queue"
+                        class="oss-link"
+                        target="_blank">View on pub.dev</a>
+                </div>
+                <div class="oss-card">
+                    <h3><a href="https://pub.dev/packages/geometry_kit"
+                            target="_blank">geometry_kit</a></h3>
+                    <p>Geometry utilities and helpers for Flutter and Dart.</p>
+                    <a href="https://pub.dev/packages/geometry_kit"
+                        class="oss-link"
+                        target="_blank">View on pub.dev</a>
+                </div>
+                <!-- Add more packages as needed -->
+                <div class="oss-card all-packages">
+                    <a href="https://pub.dev/publishers/samderlust.com/packages"
+                        target="_blank">See all packages →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact"
+        class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>Interested in working together? Let's connect!</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sangnguyenngoc/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/samderlust"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:your.email@example.com"
+                        aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Samderlust Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
