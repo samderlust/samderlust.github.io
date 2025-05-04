@@ -69,38 +69,44 @@ window.addEventListener('scroll', () => {
 
 // Typing animation for the subtitle
 const subtitle = document.querySelector('.subtitle');
-const text = subtitle.textContent;
-subtitle.textContent = '';
-let i = 0;
-
-function typeWriter() {
-    if (i < text.length) {
-        subtitle.textContent += text.charAt(i);
-        i++;
-        setTimeout(typeWriter, 50);
+if (subtitle) {
+    const text = subtitle.textContent;
+    subtitle.textContent = '';
+    let i = 0;
+    function typeWriter() {
+        if (i < text.length) {
+            subtitle.textContent += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 50);
+        }
     }
+    window.addEventListener('load', typeWriter);
 }
 
-// Start typing animation when page loads
-window.addEventListener('load', typeWriter);
-
 // Mobile menu toggle
+const navContainer = document.querySelector('.nav-container');
 const navLinks = document.querySelector('.nav-links');
 const menuToggle = document.createElement('button');
 menuToggle.className = 'menu-toggle';
-menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
 menuToggle.setAttribute('aria-label', 'Toggle menu');
+menuToggle.innerHTML = '<span></span><span></span><span></span>';
 
 // Only add mobile menu if we're on a small screen
 if (window.innerWidth <= 768) {
-    nav.insertBefore(menuToggle, navLinks);
-    navLinks.style.display = 'none';
+    if (navContainer && navLinks) {
+        if (navContainer.contains(navLinks)) {
+            navContainer.insertBefore(menuToggle, navLinks);
+        } else {
+            navContainer.appendChild(menuToggle);
+        }
+        navLinks.style.display = 'none';
 
-    menuToggle.addEventListener('click', () => {
-        const isVisible = navLinks.style.display === 'flex';
-        navLinks.style.display = isVisible ? 'none' : 'flex';
-        menuToggle.innerHTML = isVisible ? '<i class="fas fa-bars"></i>' : '<i class="fas fa-times"></i>';
-    });
+        menuToggle.addEventListener('click', () => {
+            const isVisible = navLinks.style.display === 'flex';
+            navLinks.style.display = isVisible ? 'none' : 'flex';
+            menuToggle.classList.toggle('open', !isVisible);
+        });
+    }
 }
 
 // Handle window resize
@@ -113,5 +119,19 @@ window.addEventListener('resize', () => {
     } else if (!menuToggle.parentNode) {
         nav.insertBefore(menuToggle, navLinks);
         navLinks.style.display = 'none';
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Hamburger menu toggle for mobile
+    const hamburger = document.querySelector('.hamburger');
+    const navContainer = document.querySelector('.nav-container');
+    console.log('Hamburger:', hamburger);
+    console.log('NavContainer:', navContainer);
+    if (hamburger && navContainer) {
+        hamburger.addEventListener('click', () => {
+            navContainer.classList.toggle('nav-open');
+            console.log('Hamburger clicked, nav-open toggled');
+        });
     }
 }); 
