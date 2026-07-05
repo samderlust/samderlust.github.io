@@ -12,6 +12,8 @@
     <meta property="og:title" content="Sundry — Back-office for solo operators">
     <meta property="og:description" content="Scan receipts, send invoices, track expenses — in one app.">
     <meta property="og:image" content="https://samderlust.github.io/sundry/hero.png">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -79,7 +81,10 @@
 <!-- Nav -->
 <nav class="fixed top-0 w-full z-50 border-b border-white/[0.08] glass-nav">
     <div class="flex justify-between items-center h-20 px-4 md:px-12 max-w-[1200px] mx-auto">
-        <div class="text-[22px] tracking-tighter text-[#e3e2e4] font-bold">SUNDRY</div>
+        <a href="#" class="flex items-center gap-2.5">
+            <img src="icon.png" alt="Sundry" class="w-8 h-8 rounded-lg">
+            <span class="text-[22px] tracking-tighter text-[#e3e2e4] font-bold">SUNDRY</span>
+        </a>
         <div class="hidden md:flex items-center gap-8">
             <a class="text-[#8a8f98] hover:text-[#e3e2e4] transition-colors text-sm" href="privacy.html">Privacy</a>
             <a class="text-[#8a8f98] hover:text-[#e3e2e4] transition-colors text-sm" href="terms.html">Terms</a>
