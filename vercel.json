@@ -1,6 +1,5 @@
 {
-  "rootDirectory": "sundry",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/$1" }
-  ]
+  "outputDirectory": "sundry",
+  "buildCommand": null,
+  "framework": null
 }
