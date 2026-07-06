@@ -1,0 +1,6 @@
+{
+  "rootDirectory": "sundry",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/$1" }
+  ]
+}
